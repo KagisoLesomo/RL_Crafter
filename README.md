@@ -1,9 +1,14 @@
-# RL_Crafter
-For The RL Assignment
+
+### Baseline:
+python train.py
+
+### Observation Normalisation only:
+python train.py --normalise
+
+### Frame Stacking only (e.g., stack 4 frames):
+python train.py --frame_stack 4
+
+### Both improvements:
+python train.py --normalise --frame_stack 4
 
 
-Essentially, to un any of my versions, just:
-
-python train.py --outdir logdir/run1 --steps 10000 --video-fps 30 --video-size 512
-
-(rather self-explanitory)
