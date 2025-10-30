@@ -4,7 +4,7 @@
 bash
 python train.py
 
-###Observation Normalisation only:
+### Observation Normalisation only:
 
 bash
 python train.py --normalise
