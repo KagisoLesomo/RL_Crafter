@@ -1,6 +1,7 @@
 # RL_Crafter
 For The RL Assignment
 
+Alt Algorithm = Proximal Policy Optimization (PPO
 
 Essentially, to un any of my versions, just:
 
