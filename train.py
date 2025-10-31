@@ -148,7 +148,7 @@ if __name__ == "__main__":
         
         print(f"Episode {ep+1:2d}/{args.eval_episodes}: Reward={total_reward:6.2f} | Survival={timesteps:4d} | Achievements={num_achievements}")
 
-    # Calculate assignment-required metrics
+    # Calculate 
     unlock_rates = {key: achievement_counts[key] / args.eval_episodes for key in ACHIEVEMENT_KEYS}
     unlock_values = [max(rate, 1e-8) for rate in unlock_rates.values()]
     geom_mean_unlock = np.exp(np.mean(np.log(unlock_values)))
@@ -168,8 +168,7 @@ if __name__ == "__main__":
     print(f"PERFORMANCE METRICS - {', '.join(config_details)}")
     print(f"{'='*70}")
     
-    # Assignment-required metrics (highlighted)
-    print(f"\n📋 ASSIGNMENT STANDARD METRICS:")
+
     print(f"  ├─ Geometric Mean of Achievement Unlock Rates: {geom_mean_unlock:.6f}")
     print(f"  ├─ Average Survival Time:                      {avg_survival:.2f} timesteps")
     print(f"  └─ Average Cumulative Reward per Episode:      {avg_reward:.4f}")
@@ -181,7 +180,7 @@ if __name__ == "__main__":
     print(f"  ├─ Unique Achievements Unlocked: {total_unique_achievements}/22")
     print(f"  └─ Avg Achievements Per Episode: {avg_achievements:.2f}")
     
-    # Achievement unlock rates (assignment required)
+    # Achievement unlock rates
     print(f"\n🎯 ACHIEVEMENT UNLOCK RATES (per achievement):")
     unlocked = {k: v for k, v in sorted(unlock_rates.items()) if v > 0}
     locked = {k: v for k, v in sorted(unlock_rates.items()) if v == 0}
