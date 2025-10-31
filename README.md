@@ -1,10 +1,17 @@
 # RL_Crafter
 For The RL Assignment
 
+# RL_Crafter
+For The RL Assignment
+
+To run DQN:
+
+Open the notebook (`crafter.ipynb`)
+Each training method (baseline, framestacking, autoencoder etc.) is in its own cell
+Simply **run the cell** to train the model — no command line needed
+
+
 Alt Algorithm = Proximal Policy Optimization (PPO)
-
-
-
 
 ### Baseline (no improvements):
 
